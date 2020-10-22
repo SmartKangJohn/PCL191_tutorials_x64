@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F41909C0-6407-38F1-A922-C5FE9EE696AE}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\sources\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/ZFQworkspace/gitPro/PCL191_tutorials_x64/sources/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/ZFQworkspace/gitPro/PCL191_tutorials_x64/sources -BE:/ZFQworkspace/gitPro/PCL191_tutorials_x64/project --check-stamp-file E:/ZFQworkspace/gitPro/PCL191_tutorials_x64/project/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\CMakeFiles\3.17.0\CMakeCCompiler.cmake;E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\CMakeFiles\3.17.0\CMakeCXXCompiler.cmake;E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\CMakeFiles\3.17.0\CMakeRCCompiler.cmake;E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\CMakeFiles\3.17.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/ZFQworkspace/gitPro/PCL191_tutorials_x64/sources/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/ZFQworkspace/gitPro/PCL191_tutorials_x64/sources -BE:/ZFQworkspace/gitPro/PCL191_tutorials_x64/project --check-stamp-file E:/ZFQworkspace/gitPro/PCL191_tutorials_x64/project/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\CMakeFiles\3.17.0\CMakeCCompiler.cmake;E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\CMakeFiles\3.17.0\CMakeCXXCompiler.cmake;E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\CMakeFiles\3.17.0\CMakeRCCompiler.cmake;E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\CMakeFiles\3.17.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\ZERO_CHECK.vcxproj">
+      <Project>{ED642744-1316-3767-867A-4B697DA2AC2F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\vfh_recognition\build_tree.vcxproj">
+      <Project>{22ED85D9-8147-3FD7-8915-8D2312668734}</Project>
+      <Name>build_tree</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\cloud_viewer\cloud_viewer.vcxproj">
+      <Project>{F2286092-3FBA-3EDF-B0FA-4F17E5E30F52}</Project>
+      <Name>cloud_viewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\cluster_extraction\cluster_extraction.vcxproj">
+      <Project>{FCD961FB-9ADB-3D72-80BD-F60E1C71594C}</Project>
+      <Name>cluster_extraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\concatenate_clouds\concatenate_clouds.vcxproj">
+      <Project>{B9423B97-D23F-32FF-A24F-A3E5B0C2E19B}</Project>
+      <Name>concatenate_clouds</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\concatenate_fields\concatenate_fields.vcxproj">
+      <Project>{2608BCB8-20F2-3D59-BE63-B861EDF73442}</Project>
+      <Name>concatenate_fields</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\concatenate_points\concatenate_points.vcxproj">
+      <Project>{25A4EBED-2E9A-3C56-A29A-64BBE1D1A0F1}</Project>
+      <Name>concatenate_points</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\concave_hull_2d\concave_hull_2d.vcxproj">
+      <Project>{F03211ED-8158-31F4-975F-33B9C0F98C82}</Project>
+      <Name>concave_hull_2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\conditional_removal\conditional_removal.vcxproj">
+      <Project>{F268211B-BD1E-35DB-A3B7-E4E1B34CA4EB}</Project>
+      <Name>conditional_removal</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\convex_hull_2d\convex_hull_2d.vcxproj">
+      <Project>{0EC50297-1C1A-3AE3-A26A-5912F2F36395}</Project>
+      <Name>convex_hull_2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\correspondence_grouping\correspondence_grouping.vcxproj">
+      <Project>{7E8CB4CE-65C0-3521-B67E-ACC67C9D4FC4}</Project>
+      <Name>correspondence_grouping</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\cylinder_segmentation\cylinder_segmentation.vcxproj">
+      <Project>{19747E8B-3EF5-3DF9-9E35-56065FA3D547}</Project>
+      <Name>cylinder_segmentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\registration_api\example2.vcxproj">
+      <Project>{CA24122E-0E6B-3B19-B9E5-D2567012AC0D}</Project>
+      <Name>example2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\extract_indices\extract_indices.vcxproj">
+      <Project>{860A523D-AC3D-3FBD-BBBF-CBC98C266954}</Project>
+      <Name>extract_indices</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\greedy_projection\greedy_projection.vcxproj">
+      <Project>{CBCE5744-03B9-3971-938F-886713604309}</Project>
+      <Name>greedy_projection</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iccv2011\iccv2011_build_all_object_models.vcxproj">
+      <Project>{3537F32E-9746-3700-8EF0-1E359626E44D}</Project>
+      <Name>iccv2011_build_all_object_models</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iccv2011\iccv2011_build_object_model.vcxproj">
+      <Project>{8058740E-2C8C-3DE0-B4B8-BE3F5C45F5DB}</Project>
+      <Name>iccv2011_build_object_model</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iccv2011\iccv2011_capture_tool.vcxproj">
+      <Project>{CB46459D-0C8A-3403-BE1F-EE19E1486AB5}</Project>
+      <Name>iccv2011_capture_tool</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iccv2011\iccv2011_correspondence_viewer.vcxproj">
+      <Project>{A271EC97-1678-3F54-A1CC-9748A146121B}</Project>
+      <Name>iccv2011_correspondence_viewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iccv2011\iccv2011_test_feature_estimation.vcxproj">
+      <Project>{F20169C0-1F63-3422-8CAC-C35B1DDE8D65}</Project>
+      <Name>iccv2011_test_feature_estimation</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iccv2011\iccv2011_test_filters.vcxproj">
+      <Project>{C49136E4-BEC2-353B-8E85-219AB6EE9842}</Project>
+      <Name>iccv2011_test_filters</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iccv2011\iccv2011_test_object_recognition.vcxproj">
+      <Project>{83ED39C7-9D6C-3345-9BC7-7CFB6E811CC6}</Project>
+      <Name>iccv2011_test_object_recognition</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iccv2011\iccv2011_test_registration.vcxproj">
+      <Project>{C5947920-BD63-3FC9-A94B-E7C060348145}</Project>
+      <Name>iccv2011_test_registration</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iccv2011\iccv2011_test_segmentation.vcxproj">
+      <Project>{3F8F3A95-2DF2-345F-8D4F-A7B2E057341C}</Project>
+      <Name>iccv2011_test_segmentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iccv2011\iccv2011_tutorial.vcxproj">
+      <Project>{27CD4D92-C042-3F11-AF8D-35385471BD7D}</Project>
+      <Name>iccv2011_tutorial</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\implicit_shape_model\implicit_shape_model.vcxproj">
+      <Project>{66D0AA84-C931-3261-A08B-FCA6C8AE619E}</Project>
+      <Name>implicit_shape_model</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iros2011\iros2011_build_all_object_models.vcxproj">
+      <Project>{1B5B88AC-E23D-3E96-94B0-7F25DECF90DD}</Project>
+      <Name>iros2011_build_all_object_models</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iros2011\iros2011_build_object_model.vcxproj">
+      <Project>{7D04B326-A46B-3F0D-BFD3-76A786C65182}</Project>
+      <Name>iros2011_build_object_model</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iros2011\iros2011_capture_tool.vcxproj">
+      <Project>{44B8013F-7587-3AA6-8C73-1933FA970016}</Project>
+      <Name>iros2011_capture_tool</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iros2011\iros2011_correspondence_viewer.vcxproj">
+      <Project>{588C3663-C66A-3C87-B309-F49B218DA1C3}</Project>
+      <Name>iros2011_correspondence_viewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iros2011\iros2011_test_feature_estimation.vcxproj">
+      <Project>{960A8F65-F3C3-31C8-A25D-7CF57AA8FAFA}</Project>
+      <Name>iros2011_test_feature_estimation</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iros2011\iros2011_test_filters.vcxproj">
+      <Project>{ED90CE8F-2EE5-3876-8B6F-71542ED1D3FC}</Project>
+      <Name>iros2011_test_filters</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iros2011\iros2011_test_object_recognition.vcxproj">
+      <Project>{85CA9807-38C1-344E-9C32-0DD1D53E8C9F}</Project>
+      <Name>iros2011_test_object_recognition</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iros2011\iros2011_test_registration.vcxproj">
+      <Project>{D9B7820D-8051-3AB4-9E9E-D2083A6514CA}</Project>
+      <Name>iros2011_test_registration</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iros2011\iros2011_test_segmentation.vcxproj">
+      <Project>{3B6190E2-588D-346B-928C-B3FD789FABE6}</Project>
+      <Name>iros2011_test_segmentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iros2011\iros2011_test_surface.vcxproj">
+      <Project>{B24E201F-076E-38DE-8EEA-9DBF2FF68BE4}</Project>
+      <Name>iros2011_test_surface</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\iterative_closest_point\iterative_closest_point.vcxproj">
+      <Project>{921CD335-A0A9-3C56-A179-429C6371DE0A}</Project>
+      <Name>iterative_closest_point</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\kdtree_search\kdtree_search.vcxproj">
+      <Project>{BB86EBA1-4A41-3B72-B922-A909B9FE8D04}</Project>
+      <Name>kdtree_search</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\min_cut_segmentation\min_cut_segmentation.vcxproj">
+      <Project>{F685F234-D7F7-3A4E-8A81-22F950DEC09F}</Project>
+      <Name>min_cut_segmentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\moment_of_inertia\moment_of_inertia.vcxproj">
+      <Project>{D613DDD9-CF77-3505-9217-A061376F201B}</Project>
+      <Name>moment_of_inertia</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\narf_feature_extraction\narf_feature_extraction.vcxproj">
+      <Project>{728F2714-B443-39BB-8A4A-E9EA274A8D9E}</Project>
+      <Name>narf_feature_extraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\narf_keypoint_extraction\narf_keypoint_extraction.vcxproj">
+      <Project>{FDB7E861-868B-3BF5-A991-1BF94341F160}</Project>
+      <Name>narf_keypoint_extraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\vfh_recognition\nearest_neighbors.vcxproj">
+      <Project>{523A163A-6C5D-367A-AF66-E22439691340}</Project>
+      <Name>nearest_neighbors</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\normal_distributions_transform\normal_distributions_transform.vcxproj">
+      <Project>{3D6E5C44-42AE-3FD7-B2B4-8CD5DCD9F40D}</Project>
+      <Name>normal_distributions_transform</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\normal_estimation_using_integral_images\normal_estimation_using_integral_images.vcxproj">
+      <Project>{CA9AC338-55BF-38E3-BCC1-999B79147049}</Project>
+      <Name>normal_estimation_using_integral_images</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\octree_change_detection\octree_change_detection.vcxproj">
+      <Project>{2E93588F-B874-31FA-8129-0F39D0E92497}</Project>
+      <Name>octree_change_detection</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\octree_search\octree_search.vcxproj">
+      <Project>{A46E40B3-2470-3332-B73B-11BC0DC08104}</Project>
+      <Name>octree_search</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\openni_grabber\openni_grabber.vcxproj">
+      <Project>{16A8BC39-1D4D-3FC0-B64A-8BFA0E716202}</Project>
+      <Name>openni_grabber</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\openni_narf_keypoint_extraction\openni_narf_keypoint_extraction.vcxproj">
+      <Project>{C634F77C-358A-3156-8988-9EDBB8C4E41B}</Project>
+      <Name>openni_narf_keypoint_extraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\openni_range_image_visualization\openni_range_image_visualization.vcxproj">
+      <Project>{A336D2D9-FA4A-3BE6-9CFE-191A54C08B99}</Project>
+      <Name>openni_range_image_visualization</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\passthrough\passthrough.vcxproj">
+      <Project>{3D5AE6F8-672F-39D0-BEB8-F89559B3F851}</Project>
+      <Name>passthrough</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\pcd_read\pcd_read.vcxproj">
+      <Project>{8DDEA471-C6A1-30FB-90F0-64B47F8BFCC4}</Project>
+      <Name>pcd_read</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\pcd_write\pcd_write.vcxproj">
+      <Project>{B2C38E20-94C5-346F-9DD2-674A55281F13}</Project>
+      <Name>pcd_write</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\pcl_visualizer\pcl_visualizer_demo.vcxproj">
+      <Project>{40901EE3-4843-3E9F-A10C-5BE2492C381A}</Project>
+      <Name>pcl_visualizer_demo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\planar_segmentation\planar_segmentation.vcxproj">
+      <Project>{624D50FD-3923-3DA3-ABC3-A85366BBA623}</Project>
+      <Name>planar_segmentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\point_cloud_compression\point_cloud_compression.vcxproj">
+      <Project>{582FDF53-CB1C-316C-AA10-D73C26EC7017}</Project>
+      <Name>point_cloud_compression</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\project_inliers\project_inliers.vcxproj">
+      <Project>{ABFEDA57-0ECF-3A4C-82B9-5662526E7775}</Project>
+      <Name>project_inliers</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\radius_outlier_removal\radius_outlier_removal.vcxproj">
+      <Project>{A7A6843C-8069-3F0B-918C-E27341C8A917}</Project>
+      <Name>radius_outlier_removal</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\random_sample_consensus\random_sample_consensus.vcxproj">
+      <Project>{05DCABA8-A4FA-372E-82D3-070F83EF531B}</Project>
+      <Name>random_sample_consensus</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\range_image_border_extraction\range_image_border_extraction.vcxproj">
+      <Project>{4CB082CF-6E39-3D0B-8149-39A2390F457C}</Project>
+      <Name>range_image_border_extraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\range_image_creation\range_image_creation.vcxproj">
+      <Project>{6F2FF2B8-98A1-3914-9DF4-71553375AC58}</Project>
+      <Name>range_image_creation</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\range_image_visualization\range_image_visualization.vcxproj">
+      <Project>{F1D2FCA4-03A0-34D5-BDCF-2ACBBB306636}</Project>
+      <Name>range_image_visualization</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\region_growing_rgb_segmentation\region_growing_rgb_segmentation.vcxproj">
+      <Project>{0F6B34DE-D935-39E2-8A76-077E2FF88765}</Project>
+      <Name>region_growing_rgb_segmentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\region_growing_segmentation\region_growing_segmentation.vcxproj">
+      <Project>{0CD2369F-BE71-33E8-8A9E-701C9D610606}</Project>
+      <Name>region_growing_segmentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\remove_outliers\remove_outliers.vcxproj">
+      <Project>{BEDD8A6B-D774-31F5-A683-B16585E8CA90}</Project>
+      <Name>remove_outliers</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\resampling\resampling.vcxproj">
+      <Project>{25766574-9D4E-3307-80A6-C9833E136AAF}</Project>
+      <Name>resampling</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\rops_feature\rops_feature.vcxproj">
+      <Project>{6BFB13EE-74BA-3857-B6EA-DDA0707C216F}</Project>
+      <Name>rops_feature</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\statistical_removal\statistical_removal.vcxproj">
+      <Project>{539DEF1D-B102-3AB2-B16E-A27FA1D4BC22}</Project>
+      <Name>statistical_removal</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\stick_segmentation\stick_segmentation.vcxproj">
+      <Project>{5DFC5ABF-8AF0-3B70-907D-CD69225931AA}</Project>
+      <Name>stick_segmentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\supervoxel_clustering\supervoxel_clustering.vcxproj">
+      <Project>{C2FF85DD-23D4-3AEF-A470-105737B5CC9A}</Project>
+      <Name>supervoxel_clustering</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\template_alignment\template_alignment.vcxproj">
+      <Project>{02A87E58-FACE-356B-9E90-6C1CFF211FAC}</Project>
+      <Name>template_alignment</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\tracking\tracking_sample.vcxproj">
+      <Project>{015DC83F-4315-31CE-A4A7-AF9A3BC4CF9F}</Project>
+      <Name>tracking_sample</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\project\voxel_grid\voxel_grid.vcxproj">
+      <Project>{9E8CB572-F6A6-3DA1-90A6-71086D519CEA}</Project>
+      <Name>voxel_grid</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

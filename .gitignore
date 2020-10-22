@@ -1,32 +1,24 @@
-# Prerequisites
-*.d
+.vs
+x64
+/data
+/dataOut
+*.vcxproj.user
+*.csv
+*.txt
+*.yaml
+*.bmp
+*.png
+*.jpg
+*.pcd
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
+*.pdb
 *.obj
+*.log
 
-# Precompiled Headers
-*.gch
-*.pch
+*.cmake
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+*.dir
+cloud_viewer.dir
+CMakeFiles
+Debug
+Release

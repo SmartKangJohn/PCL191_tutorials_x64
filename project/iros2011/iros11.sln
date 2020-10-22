@@ -1,0 +1,130 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{F41909C0-6407-38F1-A922-C5FE9EE696AE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ED642744-1316-3767-867A-4B697DA2AC2F} = {ED642744-1316-3767-867A-4B697DA2AC2F}
+		{1B5B88AC-E23D-3E96-94B0-7F25DECF90DD} = {1B5B88AC-E23D-3E96-94B0-7F25DECF90DD}
+		{7D04B326-A46B-3F0D-BFD3-76A786C65182} = {7D04B326-A46B-3F0D-BFD3-76A786C65182}
+		{44B8013F-7587-3AA6-8C73-1933FA970016} = {44B8013F-7587-3AA6-8C73-1933FA970016}
+		{588C3663-C66A-3C87-B309-F49B218DA1C3} = {588C3663-C66A-3C87-B309-F49B218DA1C3}
+		{960A8F65-F3C3-31C8-A25D-7CF57AA8FAFA} = {960A8F65-F3C3-31C8-A25D-7CF57AA8FAFA}
+		{ED90CE8F-2EE5-3876-8B6F-71542ED1D3FC} = {ED90CE8F-2EE5-3876-8B6F-71542ED1D3FC}
+		{85CA9807-38C1-344E-9C32-0DD1D53E8C9F} = {85CA9807-38C1-344E-9C32-0DD1D53E8C9F}
+		{D9B7820D-8051-3AB4-9E9E-D2083A6514CA} = {D9B7820D-8051-3AB4-9E9E-D2083A6514CA}
+		{3B6190E2-588D-346B-928C-B3FD789FABE6} = {3B6190E2-588D-346B-928C-B3FD789FABE6}
+		{B24E201F-076E-38DE-8EEA-9DBF2FF68BE4} = {B24E201F-076E-38DE-8EEA-9DBF2FF68BE4}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "..\\ZERO_CHECK.vcxproj", "{ED642744-1316-3767-867A-4B697DA2AC2F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iros2011_build_all_object_models", "iros2011_build_all_object_models.vcxproj", "{1B5B88AC-E23D-3E96-94B0-7F25DECF90DD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ED642744-1316-3767-867A-4B697DA2AC2F} = {ED642744-1316-3767-867A-4B697DA2AC2F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iros2011_build_object_model", "iros2011_build_object_model.vcxproj", "{7D04B326-A46B-3F0D-BFD3-76A786C65182}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ED642744-1316-3767-867A-4B697DA2AC2F} = {ED642744-1316-3767-867A-4B697DA2AC2F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iros2011_capture_tool", "iros2011_capture_tool.vcxproj", "{44B8013F-7587-3AA6-8C73-1933FA970016}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ED642744-1316-3767-867A-4B697DA2AC2F} = {ED642744-1316-3767-867A-4B697DA2AC2F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iros2011_correspondence_viewer", "iros2011_correspondence_viewer.vcxproj", "{588C3663-C66A-3C87-B309-F49B218DA1C3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ED642744-1316-3767-867A-4B697DA2AC2F} = {ED642744-1316-3767-867A-4B697DA2AC2F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iros2011_test_feature_estimation", "iros2011_test_feature_estimation.vcxproj", "{960A8F65-F3C3-31C8-A25D-7CF57AA8FAFA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ED642744-1316-3767-867A-4B697DA2AC2F} = {ED642744-1316-3767-867A-4B697DA2AC2F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iros2011_test_filters", "iros2011_test_filters.vcxproj", "{ED90CE8F-2EE5-3876-8B6F-71542ED1D3FC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ED642744-1316-3767-867A-4B697DA2AC2F} = {ED642744-1316-3767-867A-4B697DA2AC2F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iros2011_test_object_recognition", "iros2011_test_object_recognition.vcxproj", "{85CA9807-38C1-344E-9C32-0DD1D53E8C9F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ED642744-1316-3767-867A-4B697DA2AC2F} = {ED642744-1316-3767-867A-4B697DA2AC2F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iros2011_test_registration", "iros2011_test_registration.vcxproj", "{D9B7820D-8051-3AB4-9E9E-D2083A6514CA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ED642744-1316-3767-867A-4B697DA2AC2F} = {ED642744-1316-3767-867A-4B697DA2AC2F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iros2011_test_segmentation", "iros2011_test_segmentation.vcxproj", "{3B6190E2-588D-346B-928C-B3FD789FABE6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ED642744-1316-3767-867A-4B697DA2AC2F} = {ED642744-1316-3767-867A-4B697DA2AC2F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iros2011_test_surface", "iros2011_test_surface.vcxproj", "{B24E201F-076E-38DE-8EEA-9DBF2FF68BE4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ED642744-1316-3767-867A-4B697DA2AC2F} = {ED642744-1316-3767-867A-4B697DA2AC2F}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F41909C0-6407-38F1-A922-C5FE9EE696AE}.Debug|x64.ActiveCfg = Debug|x64
+		{F41909C0-6407-38F1-A922-C5FE9EE696AE}.Release|x64.ActiveCfg = Release|x64
+		{ED642744-1316-3767-867A-4B697DA2AC2F}.Debug|x64.ActiveCfg = Debug|x64
+		{ED642744-1316-3767-867A-4B697DA2AC2F}.Debug|x64.Build.0 = Debug|x64
+		{ED642744-1316-3767-867A-4B697DA2AC2F}.Release|x64.ActiveCfg = Release|x64
+		{ED642744-1316-3767-867A-4B697DA2AC2F}.Release|x64.Build.0 = Release|x64
+		{1B5B88AC-E23D-3E96-94B0-7F25DECF90DD}.Debug|x64.ActiveCfg = Debug|x64
+		{1B5B88AC-E23D-3E96-94B0-7F25DECF90DD}.Debug|x64.Build.0 = Debug|x64
+		{1B5B88AC-E23D-3E96-94B0-7F25DECF90DD}.Release|x64.ActiveCfg = Release|x64
+		{1B5B88AC-E23D-3E96-94B0-7F25DECF90DD}.Release|x64.Build.0 = Release|x64
+		{7D04B326-A46B-3F0D-BFD3-76A786C65182}.Debug|x64.ActiveCfg = Debug|x64
+		{7D04B326-A46B-3F0D-BFD3-76A786C65182}.Debug|x64.Build.0 = Debug|x64
+		{7D04B326-A46B-3F0D-BFD3-76A786C65182}.Release|x64.ActiveCfg = Release|x64
+		{7D04B326-A46B-3F0D-BFD3-76A786C65182}.Release|x64.Build.0 = Release|x64
+		{44B8013F-7587-3AA6-8C73-1933FA970016}.Debug|x64.ActiveCfg = Debug|x64
+		{44B8013F-7587-3AA6-8C73-1933FA970016}.Debug|x64.Build.0 = Debug|x64
+		{44B8013F-7587-3AA6-8C73-1933FA970016}.Release|x64.ActiveCfg = Release|x64
+		{44B8013F-7587-3AA6-8C73-1933FA970016}.Release|x64.Build.0 = Release|x64
+		{588C3663-C66A-3C87-B309-F49B218DA1C3}.Debug|x64.ActiveCfg = Debug|x64
+		{588C3663-C66A-3C87-B309-F49B218DA1C3}.Debug|x64.Build.0 = Debug|x64
+		{588C3663-C66A-3C87-B309-F49B218DA1C3}.Release|x64.ActiveCfg = Release|x64
+		{588C3663-C66A-3C87-B309-F49B218DA1C3}.Release|x64.Build.0 = Release|x64
+		{960A8F65-F3C3-31C8-A25D-7CF57AA8FAFA}.Debug|x64.ActiveCfg = Debug|x64
+		{960A8F65-F3C3-31C8-A25D-7CF57AA8FAFA}.Debug|x64.Build.0 = Debug|x64
+		{960A8F65-F3C3-31C8-A25D-7CF57AA8FAFA}.Release|x64.ActiveCfg = Release|x64
+		{960A8F65-F3C3-31C8-A25D-7CF57AA8FAFA}.Release|x64.Build.0 = Release|x64
+		{ED90CE8F-2EE5-3876-8B6F-71542ED1D3FC}.Debug|x64.ActiveCfg = Debug|x64
+		{ED90CE8F-2EE5-3876-8B6F-71542ED1D3FC}.Debug|x64.Build.0 = Debug|x64
+		{ED90CE8F-2EE5-3876-8B6F-71542ED1D3FC}.Release|x64.ActiveCfg = Release|x64
+		{ED90CE8F-2EE5-3876-8B6F-71542ED1D3FC}.Release|x64.Build.0 = Release|x64
+		{85CA9807-38C1-344E-9C32-0DD1D53E8C9F}.Debug|x64.ActiveCfg = Debug|x64
+		{85CA9807-38C1-344E-9C32-0DD1D53E8C9F}.Debug|x64.Build.0 = Debug|x64
+		{85CA9807-38C1-344E-9C32-0DD1D53E8C9F}.Release|x64.ActiveCfg = Release|x64
+		{85CA9807-38C1-344E-9C32-0DD1D53E8C9F}.Release|x64.Build.0 = Release|x64
+		{D9B7820D-8051-3AB4-9E9E-D2083A6514CA}.Debug|x64.ActiveCfg = Debug|x64
+		{D9B7820D-8051-3AB4-9E9E-D2083A6514CA}.Debug|x64.Build.0 = Debug|x64
+		{D9B7820D-8051-3AB4-9E9E-D2083A6514CA}.Release|x64.ActiveCfg = Release|x64
+		{D9B7820D-8051-3AB4-9E9E-D2083A6514CA}.Release|x64.Build.0 = Release|x64
+		{3B6190E2-588D-346B-928C-B3FD789FABE6}.Debug|x64.ActiveCfg = Debug|x64
+		{3B6190E2-588D-346B-928C-B3FD789FABE6}.Debug|x64.Build.0 = Debug|x64
+		{3B6190E2-588D-346B-928C-B3FD789FABE6}.Release|x64.ActiveCfg = Release|x64
+		{3B6190E2-588D-346B-928C-B3FD789FABE6}.Release|x64.Build.0 = Release|x64
+		{B24E201F-076E-38DE-8EEA-9DBF2FF68BE4}.Debug|x64.ActiveCfg = Debug|x64
+		{B24E201F-076E-38DE-8EEA-9DBF2FF68BE4}.Debug|x64.Build.0 = Debug|x64
+		{B24E201F-076E-38DE-8EEA-9DBF2FF68BE4}.Release|x64.ActiveCfg = Release|x64
+		{B24E201F-076E-38DE-8EEA-9DBF2FF68BE4}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2B1ACA3-ABFE-3CF5-A1F9-F2CCB7FBB26A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

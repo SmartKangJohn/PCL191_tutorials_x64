@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\sources\concatenate_fields\concatenate_fields.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\ZFQworkspace\gitPro\PCL191_tutorials_x64\sources\concatenate_fields\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CBD20BF0-1583-3893-88D3-5C39E74DE78D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

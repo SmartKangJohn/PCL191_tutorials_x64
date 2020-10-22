@@ -1,0 +1,40 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{F41909C0-6407-38F1-A922-C5FE9EE696AE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ED642744-1316-3767-867A-4B697DA2AC2F} = {ED642744-1316-3767-867A-4B697DA2AC2F}
+		{FCD961FB-9ADB-3D72-80BD-F60E1C71594C} = {FCD961FB-9ADB-3D72-80BD-F60E1C71594C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "..\\ZERO_CHECK.vcxproj", "{ED642744-1316-3767-867A-4B697DA2AC2F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cluster_extraction", "cluster_extraction.vcxproj", "{FCD961FB-9ADB-3D72-80BD-F60E1C71594C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ED642744-1316-3767-867A-4B697DA2AC2F} = {ED642744-1316-3767-867A-4B697DA2AC2F}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F41909C0-6407-38F1-A922-C5FE9EE696AE}.Debug|x64.ActiveCfg = Debug|x64
+		{F41909C0-6407-38F1-A922-C5FE9EE696AE}.Release|x64.ActiveCfg = Release|x64
+		{ED642744-1316-3767-867A-4B697DA2AC2F}.Debug|x64.ActiveCfg = Debug|x64
+		{ED642744-1316-3767-867A-4B697DA2AC2F}.Debug|x64.Build.0 = Debug|x64
+		{ED642744-1316-3767-867A-4B697DA2AC2F}.Release|x64.ActiveCfg = Release|x64
+		{ED642744-1316-3767-867A-4B697DA2AC2F}.Release|x64.Build.0 = Release|x64
+		{FCD961FB-9ADB-3D72-80BD-F60E1C71594C}.Debug|x64.ActiveCfg = Debug|x64
+		{FCD961FB-9ADB-3D72-80BD-F60E1C71594C}.Debug|x64.Build.0 = Debug|x64
+		{FCD961FB-9ADB-3D72-80BD-F60E1C71594C}.Release|x64.ActiveCfg = Release|x64
+		{FCD961FB-9ADB-3D72-80BD-F60E1C71594C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3AA1F2EA-AE5A-3B3F-9717-D5F2684564FB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
