@@ -33,3 +33,13 @@ camke会自动链接pcl的相关路径，只有hadf5的路径需要自己配一�
 介绍了点云的 点连接(+) 与 字段连接 的区别(concatenateFields)；
 
 5.concatenate_fields
+介绍了点云的不同域（字段）连接，如点+法向量；
+
+6.concatenate_points
+介绍了点云的点连接，扩充点云数量(width)；
+
+7.concave_hull_2d
+
+8.conditional_removal
+
+9.convex_hull_2d
