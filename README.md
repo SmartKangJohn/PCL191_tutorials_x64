@@ -41,5 +41,28 @@ camke会自动链接pcl的相关路径，只有hadf5的路径需要自己配一�
 7.concave_hull_2d
 
 8.conditional_removal
+介绍移除离群点；
 
 9.convex_hull_2d
+
+10.correspondence_grouping
+
+11.cylinder_segmentation
+
+12.
+
+13.
+
+14.
+
+15.
+
+16.
+
+17.
+
+18.
+
+19.
+
+20.

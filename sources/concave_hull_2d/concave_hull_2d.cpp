@@ -29,18 +29,18 @@ main (int argc, char** argv)
   std::string pcd_r = "../data/table_scene_mug_stereo_textured.pcd";
   reader.read (pcd_r, *cloud);
   // Build a filter to remove spurious NaNs
-  pcl::PassThrough<pcl::PointXYZ> pass;
+  pcl::PassThrough<pcl::PointXYZ> pass;  //直通滤波
   pass.setInputCloud (cloud);
-  pass.setFilterFieldName ("z");
+  pass.setFilterFieldName ("z");  //设置滤波字段
   pass.setFilterLimits (0, 1.1);
   pass.filter (*cloud_filtered);
   std::cerr << "PointCloud after filtering has: "
             << cloud_filtered->points.size () << " data points." << std::endl;
 
-  pcl::ModelCoefficients::Ptr coefficients (new pcl::ModelCoefficients);
-  pcl::PointIndices::Ptr inliers (new pcl::PointIndices);
+  pcl::ModelCoefficients::Ptr coefficients (new pcl::ModelCoefficients);  //参数结构体
+  pcl::PointIndices::Ptr inliers (new pcl::PointIndices);  //对象和共享指针转化
   // Create the segmentation object
-  pcl::SACSegmentation<pcl::PointXYZ> seg;
+  pcl::SACSegmentation<pcl::PointXYZ> seg;  //采样一致性分割
   // Optional
   seg.setOptimizeCoefficients (true);
   // Mandatory
