@@ -39,11 +39,13 @@ camke会自动链接pcl的相关路径，只有hadf5的路径需要自己配一�
 介绍了点云的点连接，扩充点云数量(width)；
 
 7.concave_hull_2d
+介绍提取点云2d凹面——sac滤波，投影滤波，提取2d凹面；
 
 8.conditional_removal
-介绍移除离群点；
+介绍移除离群点——条件移除滤波器；
 
 9.convex_hull_2d
+介绍提取点云2d凸包——sac滤波，投影滤波，提取2d凸包；
 
 10.correspondence_grouping
 

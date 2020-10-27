@@ -27,14 +27,14 @@ int
                         << cloud->points[i].z << std::endl;
   // build the condition
   pcl::ConditionAnd<pcl::PointXYZ>::Ptr range_cond (new
-                  pcl::ConditionAnd<pcl::PointXYZ> ());
+                  pcl::ConditionAnd<pcl::PointXYZ> ());  //自定义滤波器参数
   range_cond->addComparison (pcl::FieldComparison<pcl::PointXYZ>::ConstPtr (new
       pcl::FieldComparison<pcl::PointXYZ> ("z", pcl::ComparisonOps::GT, 0.0)));
   range_cond->addComparison (pcl::FieldComparison<pcl::PointXYZ>::ConstPtr (new
       pcl::FieldComparison<pcl::PointXYZ> ("z", pcl::ComparisonOps::LT, 0.8)));
 
   // build the filter
-  pcl::ConditionalRemoval<pcl::PointXYZ> condrem;
+  pcl::ConditionalRemoval<pcl::PointXYZ> condrem;  //条件移除滤波器对象
   condrem.setCondition(range_cond);
   condrem.setInputCloud (cloud);
   condrem.setKeepOrganized(true);

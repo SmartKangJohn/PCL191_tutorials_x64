@@ -54,7 +54,7 @@ main (int argc, char** argv)
             << inliers->indices.size () << " inliers." << std::endl;
 
   // Project the model inliers
-  pcl::ProjectInliers<pcl::PointXYZ> proj;
+  pcl::ProjectInliers<pcl::PointXYZ> proj;  //Í¶Ó°ÂË²¨
   proj.setModelType (pcl::SACMODEL_PLANE);
   proj.setIndices (inliers);
   proj.setInputCloud (cloud_filtered);
@@ -65,7 +65,7 @@ main (int argc, char** argv)
 
   // Create a Concave Hull representation of the projected inliers
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_hull (new pcl::PointCloud<pcl::PointXYZ>);
-  pcl::ConcaveHull<pcl::PointXYZ> chull;
+  pcl::ConcaveHull<pcl::PointXYZ> chull;  //°¼Ãæ¼ì²â
   chull.setInputCloud (cloud_projected);
   chull.setAlpha (0.1);
   chull.reconstruct (*cloud_hull);

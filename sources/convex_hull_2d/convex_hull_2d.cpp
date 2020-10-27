@@ -13,7 +13,7 @@ int
 {
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>), cloud_filtered (new pcl::PointCloud<pcl::PointXYZ>), cloud_projected (new pcl::PointCloud<pcl::PointXYZ>);
   pcl::PCDReader reader;
-  reader.read ("table_scene_mug_stereo_textured.pcd", *cloud);
+  reader.read ("../data/table_scene_mug_stereo_textured.pcd", *cloud);
 
   // Build a filter to remove spurious NaNs
   pcl::PassThrough<pcl::PointXYZ> pass;
@@ -23,10 +23,10 @@ int
   pass.filter (*cloud_filtered);
   std::cerr << "PointCloud after filtering has: " << cloud_filtered->points.size () << " data points." << std::endl;
 
-  pcl::ModelCoefficients::Ptr coefficients (new pcl::ModelCoefficients);
-  pcl::PointIndices::Ptr inliers (new pcl::PointIndices);
+  pcl::ModelCoefficients::Ptr coefficients (new pcl::ModelCoefficients);  //参数模型
+  pcl::PointIndices::Ptr inliers (new pcl::PointIndices);  //有效点云
   // Create the segmentation object
-  pcl::SACSegmentation<pcl::PointXYZ> seg;
+  pcl::SACSegmentation<pcl::PointXYZ> seg;  //采样一致性分割
   // Optional
   seg.setOptimizeCoefficients (true);
   // Mandatory
@@ -38,7 +38,7 @@ int
   seg.segment (*inliers, *coefficients);
 
   // Project the model inliers
-  pcl::ProjectInliers<pcl::PointXYZ> proj;
+  pcl::ProjectInliers<pcl::PointXYZ> proj;  //投影滤波：使用一个模型和一组的内点的索引，将内点投影到模型形成新的一个独立点云
   proj.setModelType (pcl::SACMODEL_PLANE);
   proj.setInputCloud (cloud_filtered);
   proj.setIndices (inliers);
@@ -47,14 +47,14 @@ int
 
   // Create a Convex Hull representation of the projected inliers
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_hull (new pcl::PointCloud<pcl::PointXYZ>);
-  pcl::ConvexHull<pcl::PointXYZ> chull;
+  pcl::ConvexHull<pcl::PointXYZ> chull;  //凸包检测对象
   chull.setInputCloud (cloud_projected);
   chull.reconstruct (*cloud_hull);
 
   std::cerr << "Convex hull has: " << cloud_hull->points.size () << " data points." << std::endl;
 
   pcl::PCDWriter writer;
-  writer.write ("table_scene_mug_stereo_textured_hull.pcd", *cloud_hull, false);
+  writer.write ("../dataOut/table_scene_mug_stereo_textured_hull.pcd", *cloud_hull, false);
 
   return (0);
 }
