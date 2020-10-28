@@ -15,8 +15,8 @@
 
 typedef pcl::PointXYZRGBA PointType;
 typedef pcl::Normal NormalType;
-typedef pcl::ReferenceFrame RFType;
-typedef pcl::SHOT352 DescriptorType;
+typedef pcl::ReferenceFrame RFType;  //表示点的局部参考坐标结构
+typedef pcl::SHOT352 DescriptorType;  //SHOT特征数据结构
 
 std::string model_filename_;
 std::string scene_filename_;
@@ -42,7 +42,7 @@ showHelp (char *filename)
   std::cout << "*             Correspondence Grouping Tutorial - Usage Guide              *" << std::endl;
   std::cout << "*                                                                         *" << std::endl;
   std::cout << "***************************************************************************" << std::endl << std::endl;
-  std::cout << "Usage: " << filename << " model_filename.pcd scene_filename.pcd [Options]" << std::endl << std::endl;
+  std::cout << "Usage: " << filename << " ../data/model_filename.pcd scene_filename.pcd [Options]" << std::endl << std::endl;
   std::cout << "Options:" << std::endl;
   std::cout << "     -h:                     Show this help." << std::endl;
   std::cout << "     -k:                     Show used keypoints." << std::endl;
